@@ -26,7 +26,7 @@
             <div><span style="padding-right: 5px; font-weight: bold;">Description</span>{{ product.data.description }}</div>
         </div>
 
-        
+
 
 
         
@@ -41,12 +41,12 @@
 <script>
 import { useRoute } from "vue-router";
 import fetch from '../data/getData'
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent,IonGrid,IonRow,IonCol,IonBackButton,IonButton } from '@ionic/vue';
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent,IonGrid,IonRow,IonCol,IonBackButton,IonButtons } from '@ionic/vue';
 import { onMounted, ref } from 'vue';
 
 
     export default {
-        components:{IonPage, IonHeader, IonToolbar, IonTitle, IonContent,IonGrid,IonRow,IonCol,IonBackButton,IonButton},
+        components:{IonPage, IonHeader, IonToolbar, IonTitle, IonContent,IonGrid,IonRow,IonCol,IonBackButton,IonButtons},
         setup(){
             const router = useRoute()
             const id = router.params.id
